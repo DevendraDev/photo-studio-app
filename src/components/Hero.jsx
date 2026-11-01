@@ -52,7 +52,7 @@ function Hero({ onNavigate }) {
           backgroundImage: `url("${slide.image}"), linear-gradient(125deg, #40102d 0%, #662e4b 54%, #ad6639 100%)`,
         }}
         role="img"
-        aria-label={`${slide.name} photography at VastuChitra Pro Lab`}
+        aria-label={`${slide.name} photography at Subhash Photos`}
       />
       <div className="hero-glow absolute inset-0 -z-10" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-peshwa-purple/95 via-peshwa-purple/70 to-peshwa-purple/15" />

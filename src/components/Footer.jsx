@@ -1,6 +1,7 @@
 import {
   Clock3,
   Camera,
+  Images,
   MapPin,
   MessageCircle,
   Phone,
@@ -18,10 +19,10 @@ function Footer() {
               </span>
               <div>
                 <p className="font-display text-xl font-semibold">
-                  वास्तुचित्र <span className="font-sans text-base">Pro Lab</span>
+                  Subhash <span className="font-sans text-base">Photos</span>
                 </p>
                 <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-paithani-gold">
-                  Pro Lab &amp; Studios · Pune
+                  Photo Lab &amp; Studios · Kolhapur
                 </p>
               </div>
             </div>
@@ -32,7 +33,7 @@ function Footer() {
             </p>
             <div className="mt-5 flex gap-2">
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/subhashphotographics/?hl=en"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
@@ -41,7 +42,16 @@ function Footer() {
                 <Camera size={17} />
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://www.instagram.com/subhashphotoalbum/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Subhash Photos wedding and family albums on Instagram"
+                className="grid size-10 place-items-center rounded-full border border-white/15 text-paithani-gold transition hover:bg-white/10"
+              >
+                <Images size={17} />
+              </a>
+              <a
+                href="https://wa.me/919890908529"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
@@ -59,24 +69,17 @@ function Footer() {
             <address className="mt-4 flex gap-3 text-sm not-italic leading-7 text-white/75">
               <MapPin className="mt-1 shrink-0 text-paithani-gold" size={17} />
               <span>
-                24, Shaniwar Peth, near Shaniwar Wada,
+                741/A, E Ward, 3rd lane Shahupuri,
                 <br />
-                Pune, Maharashtra 411030, India
+                Kolhapur, Maharashtra 416001, India
               </span>
             </address>
             <a
-              href="tel:+919876543210"
+              href="tel:+919890908529"
               className="mt-3 flex items-center gap-3 text-sm text-white/75 transition hover:text-white"
             >
               <Phone size={16} className="text-paithani-gold" />
-              +91 98765 43210
-            </a>
-            <a
-              href="tel:+912024445566"
-              className="mt-2 flex items-center gap-3 text-sm text-white/75 transition hover:text-white"
-            >
-              <Phone size={16} className="text-paithani-gold" />
-              +91 20 2444 5566
+              09890908529
             </a>
           </div>
 
@@ -98,7 +101,7 @@ function Footer() {
                 <MapPin size={19} />
               </span>
               <span className="absolute bottom-2 left-3 text-[10px] font-medium text-white/75">
-                Shaniwar Peth · Pune
+                Shahupuri · Kolhapur
               </span>
               <span className="absolute right-3 top-2 rounded-full bg-white/10 px-2 py-1 text-[8px] uppercase tracking-widest text-paithani-gold">
                 Studio map
@@ -112,10 +115,10 @@ function Footer() {
             Holiday hours may vary during Ganeshotsav, Diwali &amp; Gudi Padwa.
             Please call ahead.
           </p>
-          <p>© {new Date().getFullYear()} वास्तुचित्र Pro Lab &amp; Studios</p>
+          <p>© {new Date().getFullYear()} Subhash Photos</p>
         </div>
         <p className="mt-3 text-[10px] text-white/40">
-          Demo storefront · Sample contact details · No real payment processing
+          Demo storefront · No real payment processing
         </p>
       </div>
     </footer>

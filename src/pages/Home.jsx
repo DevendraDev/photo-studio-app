@@ -112,6 +112,33 @@ function Home({ onNavigate }) {
             })}
           </div>
 
+          <a
+            href="https://www.instagram.com/subhashphotoalbum/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 flex flex-col gap-4 rounded-2xl border border-paithani-gold/35 bg-[#fffaf0] p-5 transition hover:border-paithani-gold hover:shadow-md sm:flex-row sm:items-center sm:justify-between sm:px-7"
+          >
+            <span className="flex items-start gap-4">
+              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-peshwa-purple text-paithani-gold">
+                <Images size={21} />
+              </span>
+              <span>
+                <span className="block text-xs font-bold uppercase tracking-[0.16em] text-kesari">
+                  A peek at the real moments
+                </span>
+                <span className="mt-1 block font-display text-lg font-semibold text-peshwa-purple">
+                  See our wedding &amp; family albums on Instagram
+                </span>
+                <span className="mt-1 block text-xs text-peshwa-purple/60">
+                  @subhashphotoalbum
+                </span>
+              </span>
+            </span>
+            <span className="inline-flex items-center gap-2 pl-[3.75rem] text-xs font-bold text-peshwa-purple sm:pl-0">
+              Visit Instagram <ArrowUpRight size={16} />
+            </span>
+          </a>
+
           <div className="mt-14 overflow-hidden rounded-3xl bg-peshwa-purple px-6 py-8 text-white sm:px-10 sm:py-10">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-start gap-4">
@@ -129,7 +156,7 @@ function Home({ onNavigate }) {
                 </div>
               </div>
               <span className="inline-flex shrink-0 items-center gap-2 pl-14 text-sm text-white/70 sm:pl-0">
-                Made with <Heart size={14} className="fill-kesari text-kesari" /> in Pune
+                Made with <Heart size={14} className="fill-kesari text-kesari" /> in Kolhapur
               </span>
             </div>
           </div>

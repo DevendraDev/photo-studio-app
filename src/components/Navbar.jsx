@@ -29,7 +29,7 @@ function Navbar({ activePage, cartCount, onNavigate }) {
         <span className="text-paithani-gold">✦</span>
         <span className="mx-2">महाराष्ट्राची माती, आठवणींची सोबत</span>
         <span className="hidden text-white/70 sm:inline">
-          · Pune&apos;s home for photographs that feel like home
+          · Kolhapur&apos;s home for photographs that feel like home
         </span>
       </div>
       <header className="sticky top-0 z-40 border-b border-peshwa-purple/10 bg-rice-white/95 shadow-sm backdrop-blur-md">
@@ -38,17 +38,17 @@ function Navbar({ activePage, cartCount, onNavigate }) {
             type="button"
             className="flex min-w-0 items-center gap-2 text-left"
             onClick={() => selectPage("home")}
-            aria-label="वास्तुचित्र Pro Lab home"
+            aria-label="Subhash Photos home"
           >
             <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-peshwa-purple text-paithani-gold">
               <Camera size={21} strokeWidth={1.8} />
             </span>
             <span className="min-w-0">
               <span className="block truncate font-display text-base font-semibold leading-tight text-peshwa-purple sm:text-lg">
-                वास्तुचित्र <span className="font-sans text-sm font-bold">Pro Lab</span>
+                Subhash <span className="font-sans text-sm font-bold">Photos</span>
               </span>
               <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-peshwa-purple/55">
-                Pro Lab &amp; Studios · Pune
+                Photo Lab &amp; Studios · Kolhapur
               </span>
             </span>
           </button>
@@ -80,7 +80,7 @@ function Navbar({ activePage, cartCount, onNavigate }) {
 
           <div className="flex shrink-0 items-center gap-2">
             <a
-              href="https://wa.me/919876543210?text=Namaskar%2C%20I%20would%20like%20to%20know%20more."
+              href="https://wa.me/919890908529?text=Namaskar%2C%20I%20would%20like%20to%20know%20more."
               target="_blank"
               rel="noreferrer"
               className="hidden items-center gap-2 rounded-full bg-paithani-gold px-4 py-2.5 text-xs font-bold text-peshwa-purple shadow-sm transition hover:bg-[#e2c34d] sm:inline-flex"
@@ -144,7 +144,7 @@ function Navbar({ activePage, cartCount, onNavigate }) {
                 Contact &amp; location
               </a>
               <a
-                href="https://wa.me/919876543210?text=Namaskar%2C%20I%20would%20like%20to%20know%20more."
+                href="https://wa.me/919890908529?text=Namaskar%2C%20I%20would%20like%20to%20know%20more."
                 target="_blank"
                 rel="noreferrer"
                 className="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-paithani-gold px-4 py-3 text-sm font-bold text-peshwa-purple"

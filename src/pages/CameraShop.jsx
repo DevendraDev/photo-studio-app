@@ -307,12 +307,12 @@ function CameraShop({ onAddToCart }) {
                     key={product.id}
                     className="group overflow-hidden rounded-2xl border border-peshwa-purple/10 bg-white transition hover:border-peshwa-purple/20 hover:shadow-lg"
                   >
-                    <div className="relative aspect-[1.13] overflow-hidden bg-[#f5f4f1]">
+                    <div className="studio-photo-frame relative aspect-[1.13]">
                       <img
                         src={imageUrl(product.image)}
                         alt={product.name}
                         loading="lazy"
-                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                        className="studio-photo relative z-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
                       <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider text-peshwa-purple backdrop-blur">
                         {product.brand}
@@ -420,7 +420,7 @@ function CameraShop({ onAddToCart }) {
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {comparedProducts.map((product) => (
                 <article key={product.id} className="overflow-hidden rounded-2xl border border-peshwa-purple/10">
-                  <img src={imageUrl(product.image)} alt="" className="h-36 w-full object-cover" />
+                  <img src={imageUrl(product.image)} alt="" className="studio-photo h-36 w-full object-cover" />
                   <div className="p-4">
                     <h3 className="font-display text-lg font-semibold text-peshwa-purple">{product.name}</h3>
                     <dl className="mt-3 space-y-2 text-xs">

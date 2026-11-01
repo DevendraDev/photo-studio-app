@@ -129,12 +129,12 @@ function KarizmaAlbums() {
               key={album.name}
               className="group overflow-hidden rounded-2xl border border-peshwa-purple/10 bg-white"
             >
-              <div className="relative h-56 overflow-hidden bg-[#eee8e2]">
+              <div className="studio-photo-frame relative h-56">
                 <img
                   src={album.image}
                   alt={`${album.name} wedding album inspiration`}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  className="studio-photo relative z-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
                 <span className="absolute bottom-3 left-3 rounded-full bg-rice-white/90 px-3 py-1.5 text-[10px] font-semibold text-peshwa-purple backdrop-blur">
                   {album.finish}

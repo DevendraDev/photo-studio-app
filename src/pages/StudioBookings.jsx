@@ -241,7 +241,7 @@ function StudioBookings() {
               })}
             </div>
             <p className="mt-3 text-center text-[10px] text-peshwa-purple/50">
-              Studio hours: 10:00 am–7:00 pm · All times are local to Pune
+              Studio hours: 10:00 am–7:00 pm · All times are local to Kolhapur
             </p>
           </div>
 
@@ -336,7 +336,7 @@ function StudioBookings() {
                 pattern="[+0-9 ()-]{10,16}"
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
-                placeholder="+91 98765 43210"
+                placeholder="09890908529"
                 className="mt-2 min-h-11 w-full rounded-xl border border-white/15 bg-white/10 px-3 text-sm text-white placeholder:text-white/40"
               />
             </label>

@@ -65,7 +65,7 @@ function GiftPreview({ selectedGift, message }) {
         <div className="relative h-36 w-36 -rotate-3 rounded-b-[42px] rounded-t-[22px] border border-peshwa-purple/10 bg-gradient-to-r from-[#f1f0ec] via-white to-[#e6e2d9] shadow-[8px_17px_20px_rgba(74,14,46,0.12)]">
           <div className="absolute -right-9 top-8 h-20 w-12 rounded-r-full border-[11px] border-l-0 border-[#e4e0d7] bg-transparent" />
           <div className="absolute inset-x-4 top-4 h-24 overflow-hidden rounded-xl border border-peshwa-purple/10 bg-white">
-            <img src={previewImage} alt="Sample floral image on your mug preview" className="h-full w-full object-cover" />
+            <img src={previewImage} alt="Sample floral image on your mug preview" className="studio-photo h-full w-full object-cover" />
             <span className="absolute inset-x-1 bottom-1 rounded bg-white/80 px-1 py-0.5 text-center text-[8px] font-bold text-peshwa-purple">
               {message || "YOUR PHOTO"}
             </span>
@@ -87,7 +87,7 @@ function GiftPreview({ selectedGift, message }) {
             strokeWidth={0.75}
           />
           <div className="relative mt-3 flex size-16 flex-col items-center justify-center overflow-hidden rounded-full border border-peshwa-purple/10 bg-white">
-            <img src={previewImage} alt="Sample image on your T-shirt preview" className="h-full w-full object-cover" />
+            <img src={previewImage} alt="Sample image on your T-shirt preview" className="studio-photo h-full w-full object-cover" />
             <span className="absolute inset-x-0 bottom-0 bg-white/90 text-center text-[7px] font-bold text-peshwa-purple">
               {message || "OUR DAY"}
             </span>
@@ -104,7 +104,7 @@ function GiftPreview({ selectedGift, message }) {
     <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#fff8e4] to-[#eee4cb]">
       <div className="relative grid size-40 place-items-center rounded-full border-[10px] border-[#c4a351] bg-[#a98535] p-1 shadow-[0_15px_25px_rgba(74,14,46,0.18)]">
         <div className="relative grid size-full place-items-center overflow-hidden rounded-full border-[5px] border-[#f1d88c] bg-white">
-          <img src={previewImage} alt="Sample photo on your wall clock preview" className="absolute inset-0 h-full w-full object-cover opacity-80" />
+          <img src={previewImage} alt="Sample photo on your wall clock preview" className="studio-photo absolute inset-0 h-full w-full object-cover opacity-80" />
           <span className="relative rounded bg-white/85 px-2 py-1 text-[9px] font-bold text-peshwa-purple">
             {message || "YOUR MOMENT"}
           </span>
@@ -142,7 +142,7 @@ function GiftingCorner({ onAddToCart }) {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-peshwa-purple/70 sm:text-base">
             Add your favourite faces, a family in-joke, or the date you&apos;ll
-            never forget. Made with love, right here in Pune.
+            never forget. Made with love, right here in Kolhapur.
           </p>
         </div>
       </div>
