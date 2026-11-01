@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-paithani-gold: #d4af37;
+  --color-kesari: #ff6f00;
+  --color-peshwa-purple: #4a0e2e;
+  --color-rice-white: #f9f9fb;
+  --color-marigold-pale: #fff3e7;
+  --font-sans: "DM Sans", "Noto Sans Devanagari", sans-serif;
+  --font-display: "Playfair Display", "Noto Sans Devanagari", serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #4a0e2e;
+  background: #f9f9fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: #4a0e2e;
+  background: #f0d978;
+}
+
+:focus-visible {
+  outline: 3px solid #ff6f00;
+  outline-offset: 3px;
+}
+
+.hero-slide {
+  animation: slide-in 550ms ease both;
+}
+
+.hero-image {
+  background-position: center;
+  background-size: cover;
+  transition: background-image 500ms ease;
+}
+
+.hero-glow {
+  background-image:
+    radial-gradient(circle at 78% 30%, rgba(212, 175, 55, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 86%, rgba(255, 111, 0, 0.16), transparent 30%);
+}
+
+.map-grid {
+  background-image: linear-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0.45;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
