@@ -92,7 +92,7 @@ function KarizmaAlbums() {
 
   return (
     <section className="bg-rice-white">
-      <div className="bg-[#f3edf2] px-5 py-12 sm:px-8 sm:py-16">
+      <div className="bg-studio-blue-pale px-5 py-12 sm:px-8 sm:py-16">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-kesari">
             MADE TO BE HELD ONTO

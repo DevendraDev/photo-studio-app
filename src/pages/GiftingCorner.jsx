@@ -60,7 +60,7 @@ const previewImage =
 function GiftPreview({ selectedGift, message }) {
   if (selectedGift.type === "mug") {
     return (
-      <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#fff4e8] to-[#f2e7dc]">
+      <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-studio-yellow-pale to-studio-blue-pale">
         <div className="absolute left-6 top-6 size-24 rounded-full bg-paithani-gold/20 blur-2xl" />
         <div className="relative h-36 w-36 -rotate-3 rounded-b-[42px] rounded-t-[22px] border border-peshwa-purple/10 bg-gradient-to-r from-[#f1f0ec] via-white to-[#e6e2d9] shadow-[8px_17px_20px_rgba(74,14,46,0.12)]">
           <div className="absolute -right-9 top-8 h-20 w-12 rounded-r-full border-[11px] border-l-0 border-[#e4e0d7] bg-transparent" />
@@ -80,7 +80,7 @@ function GiftPreview({ selectedGift, message }) {
 
   if (selectedGift.type === "tee") {
     return (
-      <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#f3edf2] to-[#e8dfe6]">
+      <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-studio-blue-pale to-[#dbe8f3]">
         <div className="relative flex h-44 w-52 items-center justify-center">
           <Shirt
             className="absolute size-52 fill-white text-[#e2dce0] drop-shadow-[8px_15px_12px_rgba(74,14,46,0.14)]"
@@ -101,7 +101,7 @@ function GiftPreview({ selectedGift, message }) {
   }
 
   return (
-    <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#fff8e4] to-[#eee4cb]">
+    <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-studio-yellow-pale to-[#f5e8b9]">
       <div className="relative grid size-40 place-items-center rounded-full border-[10px] border-[#c4a351] bg-[#a98535] p-1 shadow-[0_15px_25px_rgba(74,14,46,0.18)]">
         <div className="relative grid size-full place-items-center overflow-hidden rounded-full border-[5px] border-[#f1d88c] bg-white">
           <img src={previewImage} alt="Sample photo on your wall clock preview" className="studio-photo absolute inset-0 h-full w-full object-cover opacity-80" />
@@ -132,7 +132,7 @@ function GiftingCorner({ onAddToCart }) {
 
   return (
     <section className="bg-rice-white">
-      <div className="bg-[#fff4e8] px-5 py-12 sm:px-8 sm:py-16">
+      <div className="bg-studio-yellow-pale px-5 py-12 sm:px-8 sm:py-16">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-kesari">
             LITTLE THINGS, BIG FEELINGS
@@ -179,7 +179,7 @@ function GiftingCorner({ onAddToCart }) {
                     className="w-full text-left"
                   >
                     <span className="flex items-start justify-between gap-3">
-                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#fff4e8] text-kesari">
+                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-studio-blue-pale text-peshwa-purple">
                         <Icon size={19} />
                       </span>
                       <span className="rounded-full bg-peshwa-purple/5 px-2 py-1 text-[8px] font-bold tracking-wider text-peshwa-purple/60">

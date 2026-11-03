@@ -16,8 +16,8 @@ const pillars = [
     title: "Studio Bookings",
     subtitle: "तुमचा खास क्षण, आमची खास फ्रेम",
     body: "Festive portraits, tiny firsts, and family celebrations—made at your pace.",
-    tone: "bg-[#fff4e8]",
-    iconTone: "bg-[#ff6f00]/10 text-[#e65d00]",
+    tone: "bg-studio-yellow-pale",
+    iconTone: "bg-paithani-gold/20 text-peshwa-purple",
     link: "Find a shoot",
   },
   {
@@ -27,8 +27,8 @@ const pillars = [
     title: "Karizma Albums",
     subtitle: "सुखद आठवणींचा सुंदर ठेवा",
     body: "Wedding albums, handcrafted finishes, and the wall art you grow with.",
-    tone: "bg-[#f3edf2]",
-    iconTone: "bg-[#4a0e2e]/10 text-[#4a0e2e]",
+    tone: "bg-studio-blue-pale",
+    iconTone: "bg-peshwa-purple/10 text-peshwa-purple",
     link: "See the collection",
   },
   {
@@ -38,8 +38,8 @@ const pillars = [
     title: "Gifting Corner",
     subtitle: "आठवणींची भेट, मनापासून",
     body: "A favourite face on a mug, a family tee, and little gifts with a big heart.",
-    tone: "bg-[#fff8e4]",
-    iconTone: "bg-[#d4af37]/20 text-[#8a6c11]",
+    tone: "bg-studio-yellow-pale",
+    iconTone: "bg-paithani-gold/25 text-peshwa-purple",
     link: "Make it personal",
   },
   {
@@ -50,7 +50,7 @@ const pillars = [
     subtitle: "नवा दृष्टिकोन, नवी सुरुवात",
     body: "Cameras and creator essentials, with friendly advice for every first frame.",
     tone: "bg-[#edf3ef]",
-    iconTone: "bg-[#314f3d]/10 text-[#314f3d]",
+    iconTone: "bg-studio-blue-pale text-studio-blue-light",
     link: "Explore gear",
   },
 ];

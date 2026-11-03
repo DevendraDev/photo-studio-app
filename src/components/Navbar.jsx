@@ -40,12 +40,14 @@ function Navbar({ activePage, cartCount, onNavigate }) {
             onClick={() => selectPage("home")}
             aria-label="Subhash Photos home"
           >
-            <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-peshwa-purple text-paithani-gold">
-              <Camera size={21} strokeWidth={1.8} />
-            </span>
+            <img
+              src="/SubhashPhotos.jpg"
+              alt="Subhash Photos logo"
+              className="h-12 w-[88px] shrink-0 rounded-lg bg-white object-cover object-center"
+            />
             <span className="min-w-0">
               <span className="block truncate font-display text-base font-semibold leading-tight text-peshwa-purple sm:text-lg">
-                Subhash <span className="font-sans text-sm font-bold">Photos</span>
+                Subhash <span className="font-display text-base font-semibold text-studio-blue-light sm:text-lg">Photos</span>
               </span>
               <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.2em] text-peshwa-purple/55">
                 Photo Lab &amp; Studios · Kolhapur

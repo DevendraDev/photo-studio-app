@@ -49,7 +49,7 @@ function Hero({ onNavigate }) {
         key={slide.name}
         className="hero-image absolute inset-0 -z-20 hero-slide"
         style={{
-          backgroundImage: `url("${slide.image}"), linear-gradient(125deg, #40102d 0%, #662e4b 54%, #ad6639 100%)`,
+          backgroundImage: `url("${slide.image}"), linear-gradient(125deg, #153d66 0%, #285c89 54%, #ddb63e 100%)`,
         }}
         role="img"
         aria-label={`${slide.name} photography at Subhash Photos`}

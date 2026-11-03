@@ -2,19 +2,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paithani-gold: #d4af37;
-  --color-kesari: #ff6f00;
-  --color-peshwa-purple: #4a0e2e;
-  --color-rice-white: #f9f9fb;
-  --color-marigold-pale: #fff3e7;
+  --color-paithani-gold: #f5c542;
+  --color-kesari: #dca900;
+  --color-peshwa-purple: #153d66;
+  --color-rice-white: #ffffff;
+  --color-marigold-pale: #fff8df;
+  --color-studio-blue-light: #2f6797;
+  --color-studio-blue-pale: #edf4fa;
+  --color-studio-yellow-pale: #fff9e8;
   --font-sans: "DM Sans", "Noto Sans Devanagari", sans-serif;
   --font-display: "Playfair Display", "Noto Sans Devanagari", serif;
 }
 
 :root {
   font-family: var(--font-sans);
-  color: #4a0e2e;
-  background: #f9f9fb;
+  color: #153d66;
+  background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,12 +49,12 @@ button {
 }
 
 ::selection {
-  color: #4a0e2e;
-  background: #f0d978;
+  color: #153d66;
+  background: #ffe487;
 }
 
 :focus-visible {
-  outline: 3px solid #ff6f00;
+  outline: 3px solid #dca900;
   outline-offset: 3px;
 }
 
@@ -62,25 +65,25 @@ button {
 .hero-image {
   background-position: center;
   background-size: cover;
-  filter: saturate(0.86) sepia(0.1) contrast(1.04);
+  filter: saturate(0.92) sepia(0.05) contrast(1.03);
   transition: background-image 500ms ease;
 }
 
 .hero-glow {
   background-image:
-    radial-gradient(circle at 78% 30%, rgba(212, 175, 55, 0.18), transparent 28%),
-    radial-gradient(circle at 88% 86%, rgba(255, 111, 0, 0.16), transparent 30%);
+    radial-gradient(circle at 78% 30%, rgba(245, 197, 66, 0.2), transparent 28%),
+    radial-gradient(circle at 88% 86%, rgba(47, 103, 151, 0.2), transparent 30%);
 }
 
 .studio-photo {
-  filter: saturate(0.86) sepia(0.1) contrast(1.04);
+  filter: saturate(0.92) sepia(0.05) contrast(1.03);
 }
 
 .studio-photo-frame {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background-color: #eee8df;
+  background-color: #edf4fa;
 }
 
 .studio-photo-frame::after {
@@ -91,15 +94,15 @@ button {
   inset: 0;
   background: linear-gradient(
     145deg,
-    rgba(74, 14, 46, 0.08),
+    rgba(21, 61, 102, 0.08),
     transparent 48%,
-    rgba(212, 175, 55, 0.12)
+    rgba(245, 197, 66, 0.14)
   );
 }
 
 .map-grid {
-  background-image: linear-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(245, 197, 66, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 197, 66, 0.12) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 

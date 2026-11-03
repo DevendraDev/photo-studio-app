@@ -1,6 +1,5 @@
 import {
   Clock3,
-  Camera,
   Images,
   MapPin,
   MessageCircle,
@@ -14,13 +13,12 @@ function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.15fr_0.85fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="grid size-11 place-items-center rounded-xl border border-paithani-gold/45 bg-white/5 text-paithani-gold">
-                <MapPin size={20} />
-              </span>
+              <img
+                src="/SubhashPhotos.jpg"
+                alt="Subhash Photos logo"
+                className="h-14 w-28 rounded-lg bg-white object-cover object-center"
+              />
               <div>
-                <p className="font-display text-xl font-semibold">
-                  Subhash <span className="font-sans text-base">Photos</span>
-                </p>
                 <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-paithani-gold">
                   Photo Lab &amp; Studios · Kolhapur
                 </p>
@@ -39,7 +37,7 @@ function Footer() {
                 aria-label="Instagram"
                 className="grid size-10 place-items-center rounded-full border border-white/15 text-paithani-gold transition hover:bg-white/10"
               >
-                <Camera size={17} />
+                <Images size={17} />
               </a>
               <a
                 href="https://www.instagram.com/subhashphotoalbum/"

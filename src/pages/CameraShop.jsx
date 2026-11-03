@@ -204,7 +204,7 @@ function CameraShop({ onAddToCart }) {
                     value={item}
                     checked={brand === item}
                     onChange={() => setBrand(item)}
-                    className="size-4 accent-[#4a0e2e]"
+                    className="size-4 accent-peshwa-purple"
                   />
                   {item}
                 </label>
@@ -252,7 +252,7 @@ function CameraShop({ onAddToCart }) {
               step="5000"
               value={maxPrice}
               onChange={(event) => setMaxPrice(Number(event.target.value))}
-              className="mt-3 w-full accent-[#4a0e2e]"
+              className="mt-3 w-full accent-peshwa-purple"
             />
             <div className="flex justify-between text-[10px] text-peshwa-purple/45">
               <span>₹15k</span>
@@ -364,7 +364,7 @@ function CameraShop({ onAddToCart }) {
                           disabled={compareDisabled}
                           className={`inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full border px-3 text-[10px] font-semibold transition disabled:cursor-not-allowed disabled:opacity-40 ${
                             isCompared
-                              ? "border-kesari bg-[#fff4e8] text-peshwa-purple"
+                              ? "border-kesari bg-studio-yellow-pale text-peshwa-purple"
                               : "border-peshwa-purple/15 text-peshwa-purple hover:border-peshwa-purple"
                           }`}
                         >
