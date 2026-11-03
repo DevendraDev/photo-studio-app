@@ -3,18 +3,26 @@ import { ArrowDown, ArrowLeft, ArrowRight, CalendarHeart, Camera } from "lucide-
 
 const slides = [
   {
+    name: "Happy Diwali",
+    season: "HAPPY DIWALI",
+    detail: "Wishing your family a festival filled with light, laughter, and memories to cherish.",
+    image: "/DiwaliFamilyPic.jpg",
+    theme: "diwali",
+  },
+  {
     name: "Gudi Padwa",
     season: "A NEW YEAR, A NEW MEMORY",
-    detail: "Begin the year with portraits wrapped in tradition.",
-    image:
-      "https://images.unsplash.com/photo-1604608672516-60ba6f5f8d1b?auto=format&fit=crop&w=2000&q=88",
+    image: "/family-portrait-gudiPadwa.avif",
+    localizedMessage:
+      "चैत्राची सोनेरी पहाट: नव्या स्वप्नांची नवी लाट आणि नव्या वर्षाची सुरवात",
+    theme: "brand",
   },
   {
     name: "Ganeshotsav",
     season: "MANGALMAY GANESHOTSAV",
-    detail: "Keep the joy, the aarti, and every little detail close.",
-    image:
-      "https://images.unsplash.com/photo-1567591414240-e9c1e5c1f3a5?auto=format&fit=crop&w=2000&q=88",
+    image: "/Family-Ganesh.webp",
+    localizedMessage: "गणपती बाप्पा मोरया, मंगलमूर्ती मोरया!",
+    theme: "brand",
   },
   {
     name: "Royal Maharashtrian Weddings",
@@ -22,6 +30,7 @@ const slides = [
     detail: "The shehnai, the silk, the moments between the rituals.",
     image:
       "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?auto=format&fit=crop&w=2000&q=88",
+    theme: "brand",
   },
 ];
 
@@ -47,7 +56,9 @@ function Hero({ onNavigate }) {
     <section className="relative isolate min-h-[610px] overflow-hidden bg-peshwa-purple sm:min-h-[680px]">
       <div
         key={slide.name}
-        className="hero-image absolute inset-0 -z-20 hero-slide"
+        className={`hero-image absolute inset-0 -z-20 hero-slide ${
+          slide.theme === "diwali" ? "hero-image--diwali" : ""
+        }`}
         style={{
           backgroundImage: `url("${slide.image}"), linear-gradient(125deg, #153d66 0%, #285c89 54%, #ddb63e 100%)`,
         }}
@@ -55,8 +66,20 @@ function Hero({ onNavigate }) {
         aria-label={`${slide.name} photography at Subhash Photos`}
       />
       <div className="hero-glow absolute inset-0 -z-10" aria-hidden="true" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-peshwa-purple/95 via-peshwa-purple/70 to-peshwa-purple/15" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-peshwa-purple/65 via-transparent to-peshwa-purple/15" />
+      <div
+        className={`absolute inset-0 -z-10 ${
+          slide.theme === "diwali"
+            ? "bg-gradient-to-r from-[#19140f]/90 via-[#19140f]/60 to-[#19140f]/10"
+            : "bg-gradient-to-r from-peshwa-purple/95 via-peshwa-purple/70 to-peshwa-purple/15"
+        }`}
+      />
+      <div
+        className={`absolute inset-0 -z-10 ${
+          slide.theme === "diwali"
+            ? "bg-gradient-to-t from-[#19140f]/55 via-transparent to-[#19140f]/15"
+            : "bg-gradient-to-t from-peshwa-purple/65 via-transparent to-peshwa-purple/15"
+        }`}
+      />
 
       <div className="mx-auto flex min-h-[610px] max-w-7xl items-center px-5 py-16 sm:min-h-[680px] sm:px-8 lg:px-12">
         <div key={`copy-${slide.name}`} className="hero-slide max-w-3xl text-white">
@@ -67,15 +90,36 @@ function Hero({ onNavigate }) {
           <p className="mb-3 font-display text-lg font-medium text-white/85 sm:text-xl">
             {slide.name}
           </p>
-          <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.3] tracking-tight sm:text-5xl lg:text-6xl">
-            महाराष्ट्राच्या परंपरा,
-            <br className="hidden sm:block" /> तुमच्या आठवणी...
-            <br />
-            आम्ही जपू आयुष्यभर।
-          </h1>
-          <p className="mt-5 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
-            Preserving Maharashtrian Traditions, Framing Lifelong Memories.
-          </p>
+          {slide.theme === "diwali" ? (
+            <>
+              <h1 className="max-w-3xl font-display text-5xl font-semibold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Happy <span className="text-paithani-gold">Diwali!</span>
+              </h1>
+              <p className="mt-4 max-w-xl font-display text-2xl font-medium text-white sm:text-3xl">
+                दिवाळीच्या हार्दिक शुभेच्छा
+              </p>
+              <p className="mt-5 max-w-xl text-sm leading-7 text-white/90 sm:text-base">
+                Preserving the light, laughter, and little moments your family
+                will treasure for years to come.
+              </p>
+            </>
+          ) : slide.localizedMessage ? (
+            <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.4] tracking-tight sm:text-5xl lg:text-6xl">
+              {slide.localizedMessage}
+            </h1>
+          ) : (
+            <>
+              <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.3] tracking-tight sm:text-5xl lg:text-6xl">
+                महाराष्ट्राच्या परंपरा,
+                <br className="hidden sm:block" /> तुमच्या आठवणी...
+                <br />
+                आम्ही जपू आयुष्यभर।
+              </h1>
+              <p className="mt-5 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
+                Preserving Maharashtrian Traditions, Framing Lifelong Memories.
+              </p>
+            </>
+          )}
           <p className="mt-2 text-xs text-white/65 sm:text-sm">{slide.detail}</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -108,7 +152,8 @@ function Hero({ onNavigate }) {
         </a>
         <div className="ml-auto flex items-center gap-3">
           <span className="mr-1 text-[10px] font-semibold uppercase tracking-widest text-white/70">
-            {String(activeSlide + 1).padStart(2, "0")} / 03
+            {String(activeSlide + 1).padStart(2, "0")} /{" "}
+            {String(slides.length).padStart(2, "0")}
           </span>
           <div className="flex items-center gap-1.5">
             {slides.map((item, index) => (

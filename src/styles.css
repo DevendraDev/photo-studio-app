@@ -69,6 +69,11 @@ button {
   transition: background-image 500ms ease;
 }
 
+.hero-image--diwali {
+  background-position: center 57%;
+  filter: saturate(1.02) contrast(1.05);
+}
+
 .hero-glow {
   background-image:
     radial-gradient(circle at 78% 30%, rgba(245, 197, 66, 0.2), transparent 28%),
