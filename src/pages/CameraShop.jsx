@@ -58,7 +58,7 @@ const products = [
     brand: "Nikon",
     price: 82990,
     detail: "20.9 MP · APS-C · 4K video",
-    image: "photo-1519183071298-a2962be90b8e",
+    image: "photo-1502982720700-bfff97f2ecac",
     rating: "4.6",
   },
   {
@@ -88,7 +88,7 @@ const products = [
     brand: "Nikon",
     price: 18990,
     detail: "Carbon fibre · 8 kg load · Travel-ready",
-    image: "photo-1510270716297-7b6f0f8b4b37",
+    image: "photo-1612548403247-aa2873e9422d",
     rating: "4.5",
   },
   {
@@ -108,7 +108,7 @@ const products = [
     brand: "Sony",
     price: 42990,
     detail: "Wireless flash · 60 guide number · 200 flashes",
-    image: "photo-1519183071298-a2962be90b8e",
+    image: "photo-1701120285608-6a1655862b5a",
     rating: "4.7",
   },
 ];

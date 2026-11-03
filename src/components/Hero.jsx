@@ -14,7 +14,7 @@ const slides = [
     season: "A NEW YEAR, A NEW MEMORY",
     image: "/family-portrait-gudiPadwa.avif",
     localizedMessage:
-      "चैत्राची सोनेरी पहाट: नव्या स्वप्नांची नवी लाट आणि नव्या वर्षाची सुरवात",
+      "चैत्राची सोनेरी पहाट: नव्या स्वप्नांची नवी लाट, नव्या वर्षाची सुरवात",
     theme: "brand",
   },
   {
@@ -25,9 +25,10 @@ const slides = [
     theme: "brand",
   },
   {
-    name: "Royal Maharashtrian Weddings",
+    name: "Maharashtrian Weddings",
     season: "A WEDDING, ROOTED IN YOU",
     detail: "The shehnai, the silk, the moments between the rituals.",
+    localizedMessage: "महाराष्ट्राच्या परंपरा, तुमच्या आठवणी... आम्ही जपू आयुष्यभर।",
     image:
       "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?auto=format&fit=crop&w=2000&q=88",
     theme: "brand",
@@ -69,33 +70,30 @@ function Hero({ onNavigate }) {
       <div
         className={`absolute inset-0 -z-10 ${
           slide.theme === "diwali"
-            ? "bg-gradient-to-r from-[#19140f]/90 via-[#19140f]/60 to-[#19140f]/10"
-            : "bg-gradient-to-r from-peshwa-purple/95 via-peshwa-purple/70 to-peshwa-purple/15"
+            ? "bg-gradient-to-r from-[#19140f]/80 via-[#19140f]/45 to-[#19140f]/10"
+            : "bg-gradient-to-r from-peshwa-purple/78 via-peshwa-purple/42 to-peshwa-purple/8"
         }`}
       />
       <div
         className={`absolute inset-0 -z-10 ${
           slide.theme === "diwali"
-            ? "bg-gradient-to-t from-[#19140f]/55 via-transparent to-[#19140f]/15"
-            : "bg-gradient-to-t from-peshwa-purple/65 via-transparent to-peshwa-purple/15"
+            ? "bg-gradient-to-t from-[#19140f]/42 via-transparent to-[#19140f]/10"
+            : "bg-gradient-to-t from-peshwa-purple/42 via-transparent to-peshwa-purple/10"
         }`}
       />
 
       <div className="mx-auto flex min-h-[610px] max-w-7xl items-center px-5 py-16 sm:min-h-[680px] sm:px-8 lg:px-12">
-        <div key={`copy-${slide.name}`} className="hero-slide max-w-3xl text-white">
+        <div key={`copy-${slide.name}`} className="hero-slide max-w-2xl text-white">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-paithani-gold/60 bg-peshwa-purple/35 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-paithani-gold backdrop-blur">
             <span className="size-1.5 rounded-full bg-kesari" />
             {slide.season}
           </div>
-          <p className="mb-3 font-display text-lg font-medium text-white/85 sm:text-xl">
-            {slide.name}
-          </p>
           {slide.theme === "diwali" ? (
             <>
-              <h1 className="max-w-3xl font-display text-5xl font-semibold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-2xl font-display text-5xl font-semibold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Happy <span className="text-paithani-gold">Diwali!</span>
               </h1>
-              <p className="mt-4 max-w-xl font-display text-2xl font-medium text-white sm:text-3xl">
+              <p className="mt-4 max-w-xl font-display text-xl font-medium text-white sm:text-2xl">
                 दिवाळीच्या हार्दिक शुभेच्छा
               </p>
               <p className="mt-5 max-w-xl text-sm leading-7 text-white/90 sm:text-base">
@@ -103,24 +101,21 @@ function Hero({ onNavigate }) {
                 will treasure for years to come.
               </p>
             </>
-          ) : slide.localizedMessage ? (
-            <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.4] tracking-tight sm:text-5xl lg:text-6xl">
-              {slide.localizedMessage}
-            </h1>
           ) : (
             <>
-              <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.3] tracking-tight sm:text-5xl lg:text-6xl">
-                महाराष्ट्राच्या परंपरा,
-                <br className="hidden sm:block" /> तुमच्या आठवणी...
-                <br />
-                आम्ही जपू आयुष्यभर।
+              <h1 className="max-w-2xl font-display text-5xl font-semibold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+                {slide.name}
               </h1>
-              <p className="mt-5 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
-                Preserving Maharashtrian Traditions, Framing Lifelong Memories.
+              <p className="mt-4 max-w-xl font-display text-xl font-medium leading-relaxed text-white sm:text-2xl">
+                {slide.localizedMessage}
               </p>
+              {slide.detail && (
+                <p className="mt-5 max-w-xl text-sm leading-7 text-white/90 sm:text-base">
+                  {slide.detail}
+                </p>
+              )}
             </>
           )}
-          <p className="mt-2 text-xs text-white/65 sm:text-sm">{slide.detail}</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <button
